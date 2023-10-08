@@ -173,16 +173,18 @@
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.C)));
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 

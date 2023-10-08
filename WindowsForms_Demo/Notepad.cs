@@ -46,5 +46,27 @@ namespace WindowsForms_Demo
         {
             richTextBox1.Paste();
         }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            DialogResult result = fontDialog.ShowDialog();
+
+            if(result == DialogResult.OK)
+            {
+                richTextBox1.SelectionFont = fontDialog.Font;
+            }
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            DialogResult result = colorDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                richTextBox1.SelectionColor = colorDialog.Color;
+            }
+        }
     }
 }
